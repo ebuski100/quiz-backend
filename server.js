@@ -14,7 +14,7 @@ const reqOptions = {
   },
 };
 
-app.get("/api/facts", async (req, res) => {
+app.get("/api/facts/", async (req, res) => {
   fetch(url, reqOptions)
     .then((response) => {
       console.log("Response Status:", response.status);
